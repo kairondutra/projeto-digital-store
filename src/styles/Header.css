@@ -1,0 +1,88 @@
+.Header-geral {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 1200px; 
+    margin-top: 20px;
+    align-items: center;
+}
+
+
+.Header-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px; /* Match max-width of Header-container */
+  margin-left: 18px; 
+  display: flex;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-container input {
+  padding: 8px 35px 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  height: 20px;
+  width: 500px;
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.search-container i {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+button {
+  background-color: #c2185b;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a {
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+a:hover {
+  color: #a00044;
+  text-decoration: underline;
+}
+
+nav ul li img {
+  width: 100%;
+  max-height: 40px;
+}

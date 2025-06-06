@@ -1,0 +1,62 @@
+
+.Footer {
+  background-color: #121212;
+  color: white;
+  flex-wrap: wrap;
+  font-size: 14px;
+  min-width: 200px;
+  align-items: center;
+}
+
+.Footer-aux{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.Footer .Loja img:first-child {
+  margin-bottom: 10px;
+}
+
+.Footer .Loja p {
+  max-width: 250px;
+  margin: 10px 0;
+}
+
+.Footer .Loja img:not(:first-child) {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.Footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Footer ul li {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.Footer p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Footer .p-divider {
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  width: 100%;
+}
+
+.Footer > :last-child {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 20px;
+}
+
