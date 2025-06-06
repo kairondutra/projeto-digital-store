@@ -7,7 +7,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/projeto-digital-store">
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
@@ -19,4 +19,3 @@ export default function App() {
     </HashRouter>
   );
 }
-
