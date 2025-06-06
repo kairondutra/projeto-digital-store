@@ -3,6 +3,7 @@ import instagram from '../assets/instagram.svg'
 import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import { Divider } from 'primereact/divider';
+import { NavLink } from 'react-router-dom';
 import "../styles/Footer.css"
 
 function Footer() {

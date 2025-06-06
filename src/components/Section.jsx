@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { products, categories, collections } from "../data/mockData"
 import '../styles/section.css'
 import ProductCard from "./ProductCard";
+import { NavLink } from "react-router-dom";
 
 export function MainSlider() {
     const [currentSlide, setCurrentSlide] = useState(0);
