@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react"
-import { products, categories, collections } from "../data/mockData"
+import { product, products, categories, collections } from "../data/mockData"
 import '../styles/section.css'
 import ProductCard from "./ProductCard";
 
@@ -104,19 +104,26 @@ export function Categorias() {
 export function ProdutosDestaque() {
     const featuredProducts = products.filter(product => product.featured).slice(0, 6);
     
+    const handleProductClick = (productId) => {
+        navigate(`/produto/${productId}`);
+    };
+    
     return (
         <section className="featured-products">
             <div className="container">
                 <div className="section-header">
                     <h2>Produtos em destaque</h2>
-                    <a href="/produtos" className="ver-todos">Ver todos →</a>
+                    <NavLink to={"/produtos"} className="ver-todos">Ver todos →</NavLink>
                 </div>
-                <div className="products-grid">
+                <div 
+                    key= {product.id} 
+                    className="products-grid" 
+                    onClick = {() => handleProductClick(product.id)}
+                >
                     {featuredProducts.map((product) => (
                         <ProductCard key={product.id} product={product} />
                     ))}
                 </div>
-
             </div>
         </section>
     );

@@ -10,7 +10,7 @@ function Footer() {
         <div className='Footer'>
             <div className='Footer-aux'>
                 <div className="Loja">
-                    <img src={logoFooter} alt="Logo do rodapé" />
+                    <NavLink to={"/"}><img src={logoFooter} alt="Logo do rodapé" /></NavLink>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deleniti a, obcaecati aperiam voluptatem nisi.</p>
                     <img src={instagram} alt="Logo do instagram" />
                     <img src={facebook} alt="Logo do facebook" />
