@@ -13,7 +13,7 @@ function ProductDetails({ product }) {
     }
 
     const featuredProducts = products.filter(product => product.featured).slice(0, 3);
-    
+
     const handleProductClick = (productId) => {
         navigate(`/produto/${productId}`);
     };
@@ -24,9 +24,17 @@ function ProductDetails({ product }) {
             <div className="product-details-container">
                 <div className="product-image-section">
 
-                    <div className="breadcrumb">
-                        <span><strong>Home / Produtos / {product.category} / {product.name}</strong></span>
-                    </div>
+                    <nav className="breadcrumb">
+                        <NavLink to="/" ><span className="span-button">Home</span></NavLink>
+                        <span>/</span>
+                        <NavLink to="/produtos" ><span className="span-button">Produtos</span></NavLink>
+                        <span>/</span>
+                        <span>{product.category}</span>
+                        <span>/</span>
+                        <span>{product.name}</span>
+                    </nav>
+
+
 
                     <img src={product.image} alt={product.name} />
                 </div>

@@ -10,8 +10,19 @@
     justify-content: center;
 }
 
-.breadcrumb{
-    margin-bottom: 15px;
+.breadcrumb {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb span{
+    color: #666;
+}
+
+.span-button {
+    cursor: pointer;
 }
 
 .product-image-section{
