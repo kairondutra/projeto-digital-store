@@ -9,7 +9,7 @@ const Header = () => {
         <div className="Header-geral">
             <div className="Header-container">
                 <div className="Header-img">
-                    <NavLink to={"/"}><img src={LogoHeader} /></NavLink>
+                    <NavLink to="/"><img src={LogoHeader} /></NavLink>
                 </div>
                 <div className="search-container">
                     <input type="text" placeholder="Pesquisar Produto..."/>

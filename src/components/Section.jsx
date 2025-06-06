@@ -114,15 +114,13 @@ export function ProdutosDestaque() {
             <div className="container">
                 <div className="section-header">
                     <h2>Produtos em destaque</h2>
-                    <NavLink to={"/produtos"} className="ver-todos">Ver todos →</NavLink>
+                    <NavLink to="/produtos" className="ver-todos">Ver todos →</NavLink>
                 </div>
-                <div 
-                    key= {product.id} 
-                    className="products-grid" 
-                    onClick = {() => handleProductClick(product.id)}
-                >
+                <div className="products-grid">
                     {featuredProducts.map((product) => (
-                        <ProductCard key={product.id} product={product} />
+                        <ProductCard key={product.id} product={product} 
+                         onClick={() => handleProductClick(product.id)} 
+                        />
                     ))}
                 </div>
             </div>
