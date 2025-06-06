@@ -12,14 +12,14 @@ export function MainSlider() {
             title: "Queima de estoque Nike 🔥",
             subtitle: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             offer: "Oferta especial",
-            image: "/images/home-slide-1.jpeg",
+            image: "./images/home-slide-1.jpeg",
             cta: "Ver Ofertas"
         },
         {
             title: "Nova coleção Adidas",
             subtitle: "Descubra os últimos lançamentos da marca com tecnologia de ponta.",
             offer: "Lançamento",
-            image: "/images/home-slide-2.jpeg",
+            image: "./images/home-slide-2.jpeg",
             cta: "Comprar agora"
         }
     ];
@@ -134,7 +134,7 @@ export function OfertaEspecial() {
                         <button className="offer-btn">Ver Oferta</button>
                     </div>
                     <div className="offer-image">
-                        <img src="/images/product-thumb-2.jpeg" alt="Air Jordan" />
+                        <img src="./images/product-thumb-2.jpeg" alt="Air Jordan" />
                     </div>
                 </div>
             </div>
