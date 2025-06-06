@@ -14,11 +14,7 @@ function ProductDetails({ product }) {
 
     const featuredProducts = products.filter(product => product.featured).slice(0, 3);
 
-    const handleProductClick = (productId) => {
-        navigate(`/produto/${productId}`);
-    };
     return <>
-        
         <div className="product-details">
 
             <div className="product-details-container">
@@ -33,8 +29,6 @@ function ProductDetails({ product }) {
                         <span>/</span>
                         <span>{product.name}</span>
                     </nav>
-
-
 
                     <img src={product.image} alt={product.name} />
                 </div>
