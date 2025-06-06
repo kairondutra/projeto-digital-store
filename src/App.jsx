@@ -1,6 +1,6 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "../src/pages/Home"
-import Layout from "./Layout";
+import Layout from "./components/Layout";
 import Produtos from "./pages/ProductListing";
 import Produto from "./pages/ProductView";
 import NotFoundPage from "./pages/NotFoundPage";
