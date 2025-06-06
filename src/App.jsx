@@ -8,12 +8,11 @@ import NotFoundPage from "./pages/NotFoundPage";
 export default function App() {
   return (
     <HashRouter>
-        <Routes>
-            <Route path="/" element={<Layout />}/>
-                <Route index element={<Home />} />
-                <Route path="produtos" element={<Produtos />} />
-                <Route path="produto/:id" element={<Produto />} />
-                <Route path="*" element={<NotFoundPage />} />
+        <Routes path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="produtos" element={<Produtos />} />
+            <Route path="produto/:id" element={<Produto />} />
+            <Route path="*" element={<NotFoundPage />} />
         </Routes>
     </HashRouter>
   );
