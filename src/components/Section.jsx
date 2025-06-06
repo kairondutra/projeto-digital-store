@@ -4,6 +4,7 @@ import { products, categories, collections } from "../data/mockData"
 import '../styles/section.css'
 import ProductCard from "./ProductCard";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function MainSlider() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -104,6 +105,8 @@ export function Categorias() {
 
 export function ProdutosDestaque() {
     const featuredProducts = products.filter(product => product.featured).slice(0, 6);
+
+    const navigate = useNavigate()
     
     const handleProductClick = (productId) => {
         navigate(`/produto/${productId}`);
@@ -118,8 +121,10 @@ export function ProdutosDestaque() {
                 </div>
                 <div className="products-grid">
                     {featuredProducts.map((product) => (
-                        <ProductCard key={product.id} product={product} 
-                         onClick={() => handleProductClick(product.id)} 
+                        <ProductCard 
+                        key={product.id} 
+                        product={product} 
+                        onClick={() => handleProductClick(product.id)} 
                         />
                     ))}
                 </div>

@@ -2,6 +2,7 @@ import { products } from "../data/mockData";
 import "../styles/DetailPage.css";
 import { useState } from "react";
 import ProductCard from "./ProductCard";
+import { NavLink } from "react-router-dom";
 
 function ProductDetails({ product }) {
     const [selectedSize, setSelectedSize] = useState(null);
@@ -12,7 +13,10 @@ function ProductDetails({ product }) {
     }
 
     const featuredProducts = products.filter(product => product.featured).slice(0, 3);
-
+    
+    const handleProductClick = (productId) => {
+        navigate(`/produto/${productId}`);
+    };
     return <>
         
         <div className="product-details">
@@ -105,7 +109,7 @@ function ProductDetails({ product }) {
         <div className="container">
                 <div className="section-header">
                     <h2>Produtos em destaque</h2>
-                    <a href="/produtos" className="ver-todos">Ver todos →</a>
+                    <NavLink to= "/produtos" className="ver-todos">Ver todos →</NavLink>
                 </div>
                 <div className="products-grid">
                     {featuredProducts.map((product) => (
