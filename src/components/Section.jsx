@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react"
-import { product, products, categories, collections } from "../data/mockData"
+import { products, categories, collections } from "../data/mockData"
 import '../styles/section.css'
 import ProductCard from "./ProductCard";
 
