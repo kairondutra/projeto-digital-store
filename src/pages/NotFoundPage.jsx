@@ -1,4 +1,4 @@
-import ntimg from "./images/pagina404.jpg";
+import ntimg from "/images/pagina404.jpg";
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 
